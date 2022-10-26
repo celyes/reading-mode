@@ -3,9 +3,6 @@
     "version": "0.1.0",
     "description": "Reading mode for all websites",
     "manifest_version": 3,
-    "background": {
-        "service_worker": "background.js"
-    },
     "content_scripts": [
         {
             "matches": ["<all_urls>"],
@@ -14,5 +11,8 @@
     ],
     "action": {
         "default_popup": "views/popup.html"
+    },
+    "content_security_policy": {
+        
     }
 }

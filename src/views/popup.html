@@ -2,12 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reading mode</title>
+    <style>
+        .container {
+            width: 350px;
+            text-align: center;
+        }
+        .btn__activate {
+            height: 40px;
+            border: none;
+            background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+            cursor: pointer;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 700;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to reading mode</h1>
-    <button>Activate reading mode</button>
+    <div class="container">
+        <h1>Welcome to reading mode</h1>
+        <button class="btn__activate" id="activate-reading-mode-btn">Activate reading mode</button>
+    </div>
+
+    <script src="/popup.js"></script>
 </body>
 </html>

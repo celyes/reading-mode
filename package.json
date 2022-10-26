@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "build": "webpack"
+    "build": "webpack --mode=production",
+    "dev": "webpack --watch --progress --mode=development"
   },
   "devDependencies": {
     "@types/node": "^18.11.5",

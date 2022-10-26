@@ -3,7 +3,14 @@ const CopyPlugin = require("copy-webpack-plugin");
 const path = require('path');
 
 module.exports = {
-  entry: ['./src/content.ts'],
+  entry: {
+    'popup': './src/popup.ts',
+    'content': './src/content.ts',
+  },
+  watchOptions: {
+    aggregateTimeout: 200, 
+    poll: 1000,
+  },
   module: {
     rules: [
       {
@@ -16,10 +23,10 @@ module.exports = {
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
   },
-  output: {
-    filename: 'content.js',
-    path: path.resolve(__dirname, 'dist'),
-  },
+    output: {
+        path: path.resolve(__dirname, 'dist'),
+        filename: '[name].js'
+    },
   plugins: [
     new CopyPlugin({
         patterns: [
