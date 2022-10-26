@@ -4,6 +4,7 @@
     "dev": "webpack --watch --progress --mode=development"
   },
   "devDependencies": {
+    "@types/chrome": "^0.0.199",
     "@types/node": "^18.11.5",
     "copy-webpack-plugin": "^11.0.0",
     "ts-loader": "^9.4.1",
