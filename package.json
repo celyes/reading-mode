@@ -1,7 +1,7 @@
 {
   "scripts": {
     "build": "webpack --mode=production",
-    "dev": "webpack --watch --progress --mode=development"
+    "dev": "webpack --watch --progress --mode=production"
   },
   "devDependencies": {
     "@types/chrome": "^0.0.199",

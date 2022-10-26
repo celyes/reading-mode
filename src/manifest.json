@@ -12,7 +12,11 @@
     "action": {
         "default_popup": "views/popup.html"
     },
-    "content_security_policy": {
-        
-    }
+    "permissions": ["scripting", "activeTab"],
+    "web_accessible_resources": [
+        {
+          "resources": ["css/style.css"],
+          "matches": [ "<all_urls>" ]
+        }
+    ]
 }
